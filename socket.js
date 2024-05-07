@@ -8,7 +8,7 @@ let mentorId = null;
 function initSocket(server) {
     io = socketIO(server, {
         cors: {
-            origin: "http://localhost:3000",
+            origin: ["http://localhost:3001","http://localhost:3000", "https://onlinecodingweb.onrender.com"],
             methods: ["GET", "POST"]
         }
     });
